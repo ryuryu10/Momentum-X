@@ -1,0 +1,224 @@
+.settingDiv {
+    height: 370px;
+    width: 670px;
+    border-radius: 15px;
+    background: #e5e6e5;
+    text-align: center;
+    border: 1px solid #5C5D5D;
+    position: absolute;
+    z-index: 9;
+    box-shadow: 0px 13px 20px 0px rgb(0 0 0 / 50%);
+}
+
+.settingDivHeader {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 54px;
+    overflow: hidden;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background: #eff0ef;
+    color: #fff;
+}
+
+.window_buttons_Close_ST {
+    width: 12px;
+    height: 12px;
+    background-color: #FC5B5C;
+    border-radius: 50%;
+}
+
+
+
+/* ^^^ SAME AREA ^^^ */
+/* .window_show_area_ST {
+    
+} */
+
+.user_info {
+    color: #272727;
+    display: flex;
+    justify-content: left;
+    background-color: #ecedec;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    border-top: 1px #d2d3d2 solid;
+    border-bottom: 1px #d2d3d2 solid;
+}
+.username_area {
+    margin-left: 10px;
+}
+.username {
+    margin-top: 2px;
+    font-size: 19px;
+    font-weight: 200;
+    display: flex;
+    align-items: center;
+}
+.username_sub{
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.small_profile{
+    margin-left: 22px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: url(/asset/icons/profile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logout {
+    color: white;
+    font-family: "SDGothic";
+    border: 1px white solid;
+    margin-right: 20px;
+    margin-top: 15px;
+    margin-left: auto;
+    background-color: red;
+    background-image: linear-gradient(#ff5c7c, #FF375F);
+    border-radius: 9px;
+    height: 29px;
+    line-height: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+}
+
+.setting_area1 {
+    background-color: #e5e6e5;
+    height: 190px;
+    display: flex;
+    flex-direction: row;
+}
+
+.setting_area1 img {
+    width: 40px;
+    height: 40px;
+}
+
+.icon_setting_text {
+    font-size: 12px;
+    color: #8d8e8d;
+}
+
+.setting_area1 div{
+    margin-top: 26px;
+    margin-left: 26px;
+}
+.setting_area1 p{
+    margin: 0;
+}
+.preview_wallpapers{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.setting_background p{
+    margin:7px;
+}
+.preview_wallpapers img {
+    margin-bottom: 10px;
+    width:168px;
+}
+
+.now_login {
+    display: flex;
+    align-items: center;
+}
+.delete_user{
+    display: flex;
+    align-items: center;
+}
+.format{
+    display: flex;
+    align-items: center;
+}
+.setting_users_text {
+    margin-left: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.setting_users_text p {
+    margin: 0;
+}
+
+.setting_logout {
+    color: white;
+    font-family: "SDGothic";
+    border: 1px white solid;
+    margin-right: 20px;
+    margin-left: auto;
+    background-color: red;
+    background-image: linear-gradient(#ff5c7c, #FF375F);
+    border-radius: 9px;
+    height: 29px;
+    line-height: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+}
+
+.DELUS {
+    color: white;
+    font-family: "SDGothic";
+    border: 1px white solid;
+    margin-right: 20px;
+    margin-left: auto;
+    background-color: red;
+    background-image: linear-gradient(#ff5c7c, #FF375F);
+    border-radius: 9px;
+    height: 29px;
+    line-height: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+}
+
+.FORM {
+    color: white;
+    font-family: "SDGothic";
+    border: 1px white solid;
+    margin-right: 20px;
+    margin-left: auto;
+    background-color: red;
+    background-image: linear-gradient(#ff5c7c, #FF375F);
+    border-radius: 9px;
+    height: 29px;
+    line-height: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+}
+
+.user_setting_view {
+    display: flex;
+    height: 270px;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.hrlines{
+    border-top: 1px black solid;
+    height: 1px;
+    width: 620px;
+    margin: 15px 0px 15px 23px;
+}
+.dev_info {
+    margin: 0 20px 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+.OS_Title{
+    margin-top:20px;
+    font-size: 60px;
+}

@@ -1,0 +1,93 @@
+@charset "UTF-8";
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+.horizontal_axis {
+    border: 1px white solid;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    z-index: 2;
+}
+
+.vertical_axis {
+    position: absolute;
+    border: 1px white solid;
+    width: 100%;
+    top: 50%;
+    left: 0%;
+    z-index: 2;
+}
+
+
+.login {
+    height: 100vh;
+    z-index: 2;
+    /* border: 1px yellow solid; */
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+.login_UP {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login_title {
+    font-size: 20px;
+}
+#user_login {
+    display: flex;
+    align-items: center;
+}
+
+#user_login input[type=text] {
+    width: 160px;
+    height: 28px;
+    top: 1000%;
+    font-size: 12px;
+    padding-left: 10px;
+    border: 0;
+    border-radius: 14px;
+    outline: none;
+    color: #B2B5B7;
+    background-color: #5E6164;
+}
+#user_login input::placeholder {
+    color:  #B2B5B7;
+    
+}
+
+#user_login input[type=image] {
+    margin-left: 9px;
+}
+
+.profile {
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+    background: url(/asset/icons/profile.png);
+    box-shadow: 1px 3px 8px 0px rgb(0 0 0 / 50%);
+}
+
+.login_buttons {
+    width: 15%;
+    display: flex;
+    margin-top: auto;
+    font-size: 12px;
+    justify-content: space-between;
+}
+
+.login_buttons img {
+    width: 35px;
+    height: 35px;
+}
+

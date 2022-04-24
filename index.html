@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Momentum X</title>
+	<link rel="stylesheet" type="text/css" href="asset/css/core.css" />
+	<link rel="stylesheet" type="text/css" href="asset/css/lockscreen.css" />
+	<link rel="stylesheet" type="text/css" href="asset/css/system.css" />
+	<link rel="stylesheet" type="text/css" href="asset/css/todo.css" />
+	<link rel="stylesheet" type="text/css" href="asset/css/weather.css" />
+	<link rel="stylesheet" type="text/css" href="asset/css/clock.css" />
+	<link rel="stylesheet" type="text/css" href="asset/css/setting.css" />
+	
+</head>
+<body>
+	<div id="kernel">
+		<div class="os">
+			<div class="login">
+				<div class="login_UP">
+					<div class="profile"></div>
+					<p class="login_title">로그인</p>
+					<form id="user_login">
+						<input type="text" id="data_section" placeholder="사용자 이름 입력" />
+						<input type="image" id="login_button" src="/asset/icons/arraw.png">
+					</form>
+				</div>
+				<div class="login_buttons">
+					<div class="login_shutdown">
+						<img src="./asset/icons/shutdown.png" onclick="alert('창을 닫아주세요..!')">
+						<p>시스템 종료</p>
+					</div>
+					<div class="login_adduser">
+						<img src="./asset/icons/user.png">
+						<p>ㅤ회원가입ㅤ</p>
+					</div>
+					<div class="login_github" onclick="location.href='https://github.com/ryuryu10/mone'">
+						<img src="./asset/icons/git.png">
+						<p>ㅤGithubㅤ</p>
+					</div>
+				</div>
+			</div>
+			<div class="system">
+				<div class="taskbar">
+					<div class="logo"></div>
+					<span class="program_name">Momentum X</span>
+					<p class="clock">
+						Loading Time...
+					</p>
+				</div>
+				<div id="big_todo" class="todoDiv" style="display: none;">
+					<div id="small_todo" class="todoDivHeader">
+						<div class="window_buttons">
+							<div class="window_buttons_Close_TD"></div>
+							<div class="window_buttons_None"></div>
+							<div class="window_buttons_None"></div>
+						</div>
+						<div class="window_title" id="todo_window_title">Todo list</div>
+					</div>
+					<div class="window_show_area">
+						<div class="todo_header">
+							나는 곧
+							<form id="todo-form" >
+								<div class="todo_input_container">
+									<input class="effecter" type="text" placeholder="무엇을 할건가요?" />
+									<span class="focus-border"></span>
+								</div> 
+							</form>
+							을(를) 할것이다.
+						</div>
+						<ul id="todo-list"style="margin-top: 0px; overflow:auto; width:588px; height:540px;"></ul>
+					</div>
+				</div> 
+				<div id="big_weather" class="weatherDiv" style="display: none;">
+					<div id="small_weather" class="weatherDivHeader">
+						<div class="window_buttons">
+							<div class="window_buttons_Close_WD"></div>
+							<div class="window_buttons_None"></div>
+							<div class="window_buttons_None"></div>
+						</div>
+						<div class="window_title">날씨</div>
+					</div>
+					<div class="window_show_area_weather">
+						<div class="weather-box">
+							<div class="location"></div>
+							<div class="temperature"></div>
+							<div class="today_weather"></div>
+						</div>
+					</div>
+				</div> 
+				<div id="big_setting" class="settingDiv" style="display: none;">
+					<div id="small_setting" class="settingDivHeader">
+						<div class="window_buttons">
+							<div class="window_buttons_Close_ST"></div>
+							<div class="window_buttons_None"></div>
+							<div class="window_buttons_None"></div>
+						</div>
+						<div class="window_title">시스템 설정</div>
+					</div>
+					<div class="window_show_area_ST">
+						<div class="setting_main" >
+							<div class="user_info">
+								<div class="small_profile"></div>
+								<div class="username_area">
+									<div class="username"></div>
+									<div class="username_sub">
+										Momentum ID, Todo, 미디어 및 배경화면
+									</div>
+								</div>
+								<button class="logout">로그아웃</button>
+							</div>
+							<!-- 배경화면, 사용자 ID, 정보 -->
+							<div class="setting_area1">
+								<div class="background_setting_AREA">
+									<img src="./asset/icons/background.png">
+									<p class="icon_setting_text">배경화면</p>
+								</div>
+								<div class="user_setting_AREA">
+									<img src="./asset/icons/setting_user.png">
+									<p class="icon_setting_text">사용자</p>
+								</div>
+									
+								<div class="info_setting_AREA">
+									<img src="./asset/icons/info.png">
+									<p class="icon_setting_text">정보</p>
+								</div>
+							</div>
+						</div>
+						<div class="setting_background" style="display: none;">
+							<p>배경화면은 랜덤으로 설정됩니다. F5키를 눌러 배경화면을 변경할 수 있습니다.</p>
+							<div class="preview_wallpapers">
+								<img src="./asset/images/background/wallpaper1.jpg">
+								<img src="./asset/images/background/wallpaper2.jpg">
+								<img src="./asset/images/background/wallpaper3.jpg">
+								<img src="./asset/images/background/wallpaper4.jpg">
+								<img src="./asset/images/background/wallpaper5.jpg">
+								<img src="./asset/images/background/wallpaper6.jpg">
+							</div>
+							<button class="Wallpaper_back">뒤로가기</button>
+						</div>
+						<div class="setting_users" style="display: none;">
+							<div class="user_setting_view">
+								<div class="now_login">
+									<div class="setting_users_text">
+										<p class="setting_user_name" id="BBB">로그인된 사용자 : </p>
+										<p>로그아웃하려면 로그아웃 버튼을 클릭하십시오.</p>
+									</div>
+									<button class="setting_logout">로그아웃</button>
+								</div>
+								<div class="delete_user">
+									<div class="setting_users_text">
+										<p class="setting_user_name" id="XXX">Momentum X에서 ~~ 사용자의 데이터를 삭제합니다.</p>
+										<p>이 작업은 되돌릴 수 없습니다.</p>
+									</div>
+									<button class="DELUS">사용자 삭제</button>
+								</div>
+								<div class="format">
+									<div class="setting_users_text">
+										<p>Momentum X의 모든 사용자의 데이터를 삭제합니다.</p>
+										<p>이 작업은 되돌릴 수 없습니다.</p>
+									</div>
+									<button class="FORM">초기화</button>
+								</div>
+							</div>
+							<button class="user_back">뒤로가기</button>
+						</div>
+						<div class="setting_info" style="display: none;">
+							<div class="OS_Title">Momentum X</div>
+							<div class="OS_Sub">웹페이지에서 기록하는 나의 할일 리스트</div>
+							<div class="hrlines"></div>
+							<div class="dev_info">
+								<div style="display: flex;flex-direction: column;align-items: flex-start;">
+									<div class="dev_name">
+										developer : 유승우
+									</div>
+									<div class="sub_dev_name">
+										바닐라JS 챌린지 졸업작품
+									</div>
+									프로그래밍 시간 : 37 시간 18 분
+								</div>
+								
+							</div>
+							<button class="info_back">돌아가기</button>
+						</div>
+					</div>
+				</div> 
+				<div id="big_clock" class="clockDiv" style="display: none;">
+					<div id="small_clock" class="clockDivHeader">
+						<div class="window_buttons">
+							<div class="window_buttons_Close_CL"></div>
+							<div class="window_buttons_None"></div>
+							<div class="window_buttons_None"></div>
+						</div>
+						<div class="window_title">시계</div>
+					</div>
+					<div class="window_show_area_W">
+						<div class="analog_clock">
+							<div class="hour">
+								<div id="hr" class="hr"></div>
+							</div>
+							<div class="min">
+								<div id="mn" class="mn"></div>
+							</div>
+							<div class="sec">
+								<div id="sc" class="sc"></div>
+							</div>
+						</div>
+						<div class="digtal_clock">
+							<div class="days"></div>
+							<div class="times"></div>
+						</div>
+					</div>
+				</div> 
+				<div class="dock_area">
+					<div class="dock">
+						<div class="icon_weather_area">
+							<img src="./asset/icons/weather.png">
+						</div>
+						<div class="icon_clock_area">
+							<img src="./asset/icons/clock.png">
+						</div>
+						<div class="icon_setting_area">
+							<img src="./asset/icons/setting.png">
+						</div>
+						<div class="icon_todo_area">
+							<img src="./asset/icons/todo.png">
+						</div>
+						<div class="icon_message_area">
+							<img src="./asset/icons/message.png">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+	<script type="text/javascript" src="asset/js/main.js"></script>
+	<script type="text/javascript" src="asset/js/login.js"></script>
+	<script type="text/javascript" src="asset/js/clock.js"></script>
+	<script type="text/javascript" src="asset/js/todo.js"></script>
+	<script type="text/javascript" src="asset/js/window.js"></script>
+	<script type="text/javascript" src="asset/js/weather.js"></script>
+	<script type="text/javascript" src="asset/js/wallpaper.js"></script>
+	<script type="text/javascript" src="asset/js/setting.js"></script>
+	<script type="text/javascript" src="asset/js/move_screen.js"></script>
+</html>

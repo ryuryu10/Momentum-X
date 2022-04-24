@@ -1,0 +1,152 @@
+.todoDiv {
+    height: 670px;
+    width: 550px;
+    border-radius: 15px;
+    background: #e5e6e5;
+    text-align: center;
+    border: 1px solid #5C5D5D;
+    position: absolute;
+    z-index: 9;
+    box-shadow: 0px 13px 20px 0px rgb(0 0 0 / 50%);
+}
+
+.todoDivHeader {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 35px;
+    overflow: hidden;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background: #eff0ef;
+    color: #fff;
+}
+
+.window_buttons_Close_TD {
+    width: 12px;
+    height: 12px;
+    background-color: #FC5B5C;
+    border-radius: 50%;
+}
+
+/* ^^^ SAME AREA ^^^ */
+
+.todo_header {
+    font-family: "LeeSeoyun";
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    justify-content: center;
+    font-size: 25px;
+    background-color: #DAB88B;
+}
+
+:focus {
+    outline: none;
+}
+
+.todo_input_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    float: left;
+    position: relative;
+}
+.todo_input_container input {
+    font-family: "LeeSeoyun";
+    font-weight: bold;
+    height: 32px;
+}
+.todo_input_container input::placeholder {
+    font-family: "LeeSeoyun";
+    font-weight: bold;
+}
+
+
+input[type="text"] {
+    background-color: rgba(0, 0, 0, 0);
+    width: 90%;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    border: none;
+}
+
+.effecter~.focus-border {
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #FDF6EC;
+    transition: 0.4s;
+}
+
+.effecter:focus~.focus-border {
+    width: 90%;
+    transition: 0.4s;
+}
+
+ul {
+    font-family: "LeeSeoyun";
+    font-weight: bold;
+    list-style: none;
+    margin-left: -40px;
+}
+
+li {
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li:nth-child(odd) { background: #FDF6EC; }
+li:nth-child(even) { background: #F3E9DD; }
+
+ul::-webkit-scrollbar {
+    width: 12px;  /* 스크롤바의 너비 */
+}
+
+ul::-webkit-scrollbar-thumb {
+    height: 30%; /* 스크롤바의 길이 */
+    background: #b7b7b7; /* 스크롤바의 색상 */
+    
+    border-radius: 10px;
+}
+
+ul::-webkit-scrollbar-track {
+    background: #f5f7f6;  /*스크롤바 뒷 배경 색상*/
+    border: 1px #eeeeee solid;
+}
+
+#todo-list div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#todo-list p {
+    margin: 0;
+}
+.todo_detail {
+    font-size: 25px;
+}
+.todo_date {
+    color: #000000b3;
+    padding-top: 4px;
+    font-size: 12px;
+}
+
+
+ul button {
+    color: black;
+    background-color: #B7CADB;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 0 15px;
+    cursor: pointer;
+    height: 32px;
+    font-size: 14px;
+
+}
