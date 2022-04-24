@@ -4,4 +4,3 @@ const chosenImage = images[Math.floor(Math.random() * images.length)];
 wallpaper = document.querySelector("body");
 
 wallpaper.style.background = `url(https://ryuryu10.github.io/Momentum-X/asset/images/background/${chosenImage})`;
-alert(`https://ryuryu10.github.io/Momentum-X.github.io/asset/images/background/${chosenImage}`);
